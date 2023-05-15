@@ -8,12 +8,17 @@ const About = () => {
         
         
         <div className={style['container']}>
+        <p className={style['bio2']}> A Daniela le encantan los desafíos y programar es uno de ellos. </p>
+        <p className={style['bio']}> Estudió diseño en la Universidad de Buenos Aires y UX/UI en Coderhouse. Al finalizar su formación en Henry espera poder colaborar con proyectos que integren sus saberes previos y hará foco en la accesibilidad digital. </p>
+        <a className={style['porfolio']} href="https://www.behance.net/dandellacqua">Visitar mi perfil en Behance</a>
         <img 
             src={image} 
             alt="Dani" 
             className={style.Img} 
          /> 
-        </div>      
+        
+        </div>  
+          
         </>
     )
 }
