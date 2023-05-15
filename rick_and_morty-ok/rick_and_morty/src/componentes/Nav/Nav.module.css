@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.btn{
+    height: 40px;
+    width: 60px;
+    margin-top: 30px;
+    background-color: white;
+}
+

@@ -1,0 +1,15 @@
+.container {
+  /* background-image: url('./image/back.webp'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background: linear-gradient(109.6deg, rgb(9, 9, 121) 11.2%, rgb(144, 6, 161) 53.7%, rgb(0, 212, 255) 100.2%);
+}
+
+
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .container { 
+     width: 100vw;
+  }
+}

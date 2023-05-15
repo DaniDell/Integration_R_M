@@ -1,0 +1,15 @@
+.title {
+    text-align: center;
+    font-size: 2rem;
+    color: white
+}
+
+.container  {
+    display: flex;
+    justify-content: center;
+}
+
+.Img {
+    border-radius: 40px;
+}
+

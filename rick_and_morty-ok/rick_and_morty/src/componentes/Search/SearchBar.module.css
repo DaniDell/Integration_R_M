@@ -1,0 +1,74 @@
+.containerSearch {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-left: 2%;
+    background-color: transparent;
+    
+}
+
+.logo {
+    width: 40%;
+    align-items: center;
+}
+
+.containerInput {
+    margin-left: 20%;
+    background-color: transparent;
+}
+
+.look {
+    background-color: transparent;
+}
+
+.input {
+    border-radius: 15px;
+    position: absolute;
+    width: 20%;
+    height: 8%;  
+    padding-left: 1%; 
+    font-size: 18px;
+    align-items: center;
+    background-color: white;
+    
+}
+
+.btn {
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border: none; 
+    width: 30%;
+    height: 30%;  
+    margin-top: 2px;
+    margin-left: 140px;
+
+}
+
+@media (min-width: 400px) and (max-width: 700px) {
+    .containerSearch {
+        display: grid;
+        grid-template: 1fr 1fr/20% 20% 1fr ;
+        margin-bottom: 15%;
+        padding-top: 10%;
+        background-color: white;
+    }
+
+    .logo {
+        width: 70%;
+        background-color: transparent;
+    }
+
+    .containerInput {
+        align-items: center;
+        margin: 5% 50% 0% 0%;
+        background-color: transparent;
+    }
+
+    .input {
+        grid-area: 2/1/23;
+        width: 20%;
+        margin-right: 10%;
+        
+    }
+}
