@@ -1,5 +1,6 @@
 import style from './About.module.css'
 import image from '../../image/dani.jpg';
+import React from 'react';
 
 const About = () => {
     return (
