@@ -46,7 +46,7 @@ const login = (userData) => {
   }
 }
 
-useEffect(()=> {  !access && navigate('/')}, [access])
+useEffect(()=> {  !access && navigate('/')}, [access, navigate])
 
 const onClose = (id) => {
   setCharacters(

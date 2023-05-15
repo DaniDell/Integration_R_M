@@ -1,8 +1,9 @@
 .container {
-    text-align: center;
-    margin-left: 5%;
+    text-align: right;
+    margin-right: 30%;
     padding-top: 10%;
     background-color: transparent;
+    font-size: 2rem;
 }
 
 
@@ -17,6 +18,14 @@
 .btn {
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 10%;
+    width: 50%;
     background-color: white;
+    font-size: 2rem;
+    border-radius: 12px;
+}
+
+input {
+    font-size: 2rem;
+    width: 10em;
+    border-radius: 12px;
 }

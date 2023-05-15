@@ -1,8 +1,8 @@
 .containerSearch {
     display: flex;
     align-items: center;
-    padding: 20px;
-    margin-left: 2%;
+    padding: 10px;
+    margin-left: 1%;
     background-color: transparent;
     
 }
@@ -25,7 +25,7 @@
     border-radius: 15px;
     position: absolute;
     width: 20%;
-    height: 8%;  
+    height: 2.2em;  
     padding-left: 1%; 
     font-size: 18px;
     align-items: center;
@@ -48,26 +48,29 @@
 @media (min-width: 400px) and (max-width: 700px) {
     .containerSearch {
         display: grid;
-        grid-template: 1fr 1fr/20% 20% 1fr ;
-        margin-bottom: 15%;
-        padding-top: 10%;
-        background-color: white;
+        grid-template: 1fr/ 1fr 1fr;
+        justify-content: center;
+        margin-bottom: 0%;
+        padding-top: 5px;
+        background-color: transparent;
     }
 
     .logo {
-        width: 70%;
+        width:100%;
         background-color: transparent;
     }
 
     .containerInput {
+        order: 2;
         align-items: center;
-        margin: 5% 50% 0% 0%;
+        margin: 1% 0% 0% 20%;
         background-color: transparent;
+        width: 100px;
     }
 
     .input {
-        grid-area: 2/1/23;
-        width: 20%;
+        grid-area: 1/2;
+        width: 30%;
         margin-right: 10%;
         
     }
