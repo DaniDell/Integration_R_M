@@ -32,11 +32,13 @@ p {
 
 .bio {
     grid-area: 2/2;
+    margin-right: 30px;
 }
 
 .bio2 {
     grid-area: 1/2;
     align-self: flex-end;
+    margin-right: 5px;
 }
 
 .porfolio {
@@ -50,7 +52,7 @@ p {
 @media (min-width: 400px) and (max-width: 700px) {
     .container {
         display: grid;
-        grid-template: 40% 60%/ 40% 60%;
+        grid-template: 40% 60%/ 50% 50%;
         justify-content: center;
         margin-bottom: 0%;
         padding-top: 5px;
@@ -69,9 +71,17 @@ p {
     .porfolio {
         grid-area: 2/1;
         font-size: 32px;
-        color: black;
+        color: rgb(10, 8, 8);
         justify-content: center;
         margin: 30px;
+    }
+    .Img {
+        border-radius: 40px;
+        grid-area: 1/1/3/1;
+        justify-items: center;
+        align-items: center;
+        margin: 20px;
+        width: 80%;
     }
 
 

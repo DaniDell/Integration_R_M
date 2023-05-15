@@ -26,7 +26,7 @@ function App () {
   .then( ({ data }) => {
     const char = characters?.find(e => e.id === data.id)
     if (char){
-      alert("Already in the list") 
+      alert(`Character ${id} is already in the list`) 
     } 
     else if(data.id !== undefined) {
       setCharacters(characters => [...characters, data]);

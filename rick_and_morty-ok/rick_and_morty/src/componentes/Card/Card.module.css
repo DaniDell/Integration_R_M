@@ -14,7 +14,7 @@
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 0px 0 rgba(0,0,0,0.2);
     border-radius: 18px;
   }
   
@@ -62,3 +62,6 @@
     color: white;
 }
 
+.hart {
+    font-size: 30px;
+}
