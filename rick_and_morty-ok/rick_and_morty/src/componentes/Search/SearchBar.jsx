@@ -1,6 +1,6 @@
 import style from './SearchBar.module.css';
 import imageLogo from '../../image/logoNav.png';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 
 export default function SearchBar(props) {
@@ -18,11 +18,13 @@ export default function SearchBar(props) {
 
    return (
       <div className={style.containerSearch}>
-         <img 
-            src={imageLogo} 
-            alt="logo rick and morty" 
-            className={style.logo} 
-         />
+         <a href="https://github.com/DaniDell/Integration_R_M" target="_blank" rel="noopener noreferrer">
+      <img
+        src={imageLogo}
+        alt="logo rick and morty"
+        className={style.logo}
+      />
+    </a>
          
          <div className={style.containerInput}>
          <input 
@@ -36,6 +38,8 @@ export default function SearchBar(props) {
             value = {id}
          />
 
+
+</div>
 <Link to="/home" >
          <button 
             onClick={()=> props.onSearch(id)}
@@ -44,9 +48,6 @@ export default function SearchBar(props) {
          </button>
          </Link>
 
-         </div>
-
-
-      </div>
+           </div>
    );
 }

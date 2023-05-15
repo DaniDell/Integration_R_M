@@ -1,27 +1,43 @@
 .containerSearch {
-    display: flex;
+    display: grid;
+    grid-template: 1fr / 1fr 20% 30%;
+    justify-content: center;
     align-items: center;
-    padding: 10px;
-    margin-left: 1%;
+    padding: 1px;
+    margin: 5px;
     background-color: transparent;
+    width: 100%;
     
 }
 
 .logo {
-    width: 40%;
-    align-items: center;
-}
+    width: 60%;
+    align-items: start;
+    transition: filter 0.3s ease-in-out; /* Agrega una transición suave */
+    margin-right: 40px;
+    grid-area: 1/1;
+  }
+  
+  .logo:hover {
+    filter: brightness(4.2); /* Aumenta el brillo de la imagen */
+  }
 
 .containerInput {
-    margin-left: 20%;
+    margin-left: 0%;
     background-color: transparent;
+    justify-content: right;
 }
 
 .look {
     background-color: transparent;
+    width: 60px;
+    font-size: 45px;
+    align-items: center;
+    
 }
 
 .input {
+    grid-area: 1/2;
     border-radius: 15px;
     position: absolute;
     width: 20%;
@@ -30,6 +46,7 @@
     font-size: 18px;
     align-items: center;
     background-color: white;
+    justify-content: center;
     
 }
 
@@ -40,15 +57,14 @@
     border: none; 
     width: 30%;
     height: 30%;  
-    margin-top: 2px;
-    margin-left: 140px;
+    
 
 }
 
 @media (min-width: 400px) and (max-width: 700px) {
     .containerSearch {
         display: grid;
-        grid-template: 1fr/ 1fr 1fr;
+        grid-template: 180px 30px 20px/ 1fr 1fr ;
         justify-content: center;
         margin-bottom: 0%;
         padding-top: 5px;
@@ -56,12 +72,12 @@
     }
 
     .logo {
-        width:100%;
+        width:200%;
         background-color: transparent;
     }
 
     .containerInput {
-        order: 2;
+        grid-area: 2/1;
         align-items: center;
         margin: 1% 0% 0% 20%;
         background-color: transparent;
@@ -74,4 +90,22 @@
         margin-right: 10%;
         
     }
+
+    .btn {
+        grid-area: 2/1;
+        background-color: transparent;
+        width: 60px;
+        font-size: 45px;
+        align-items:end;
+     }
+
+     .btn {
+        grid-area: 2/1;
+        position: absolute;
+        cursor: pointer;
+        background-color: transparent;
+        border: none; 
+        width: 30%;
+        height: 30%;  
+     }
 }

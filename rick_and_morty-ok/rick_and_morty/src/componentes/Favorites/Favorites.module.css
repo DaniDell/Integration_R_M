@@ -1,8 +1,10 @@
 .title {
     text-align: center;
+    justify-content: center;
     font-size: 2rem;
-    color: white;
+    color: black;
     background-color: transparent;
+    margin: 10px;
 }
 
 .card-container {
@@ -10,4 +12,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: transparent;
+}
+
+.selectContainer {
+    margin: 20px;
+    height: 40px;
+    
 }
