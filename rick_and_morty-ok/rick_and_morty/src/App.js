@@ -11,6 +11,7 @@ import Favorites from './componentes/Favorites/Favorites';
 
 
 
+
 function App () {
   let [ characters, setCharacters ] = useState([])
 
@@ -21,22 +22,26 @@ function App () {
   const { pathname } = useLocation();
   const navigate = useNavigate();
 
- function onSearch(id) {
-  axios(`https://rickandmortyapi.com/api/character/${id}`)
-  .then( ({ data }) => {
-    const char = characters?.find(e => e.id === data.id)
-    if (char){
-      alert(`Character ${id} is already in the list`) 
-    } 
-    else if(data.id !== undefined) {
-      setCharacters(characters => [...characters, data]);
-    }
+  function onSearch(id) {
+    axios(`https://rickandmortyapi.com/api/character/${id}`)
+      .then(({ data }) => {
+        if (data.id !== undefined) {
+          const char = characters?.find(e => e.id === data.id)
+          if (char) {
+            alert(`Character ${id} is already in the list`)
+          } else {
+            setCharacters(characters => [...characters, data])
+          }
+        } else {
+          alert('Character not found')
+        }
+      })
+      .catch(() => {
+        alert('Character not found');
+    
+      })
+  }
   
-    else {
-      alert('Character not found');
-    }
-  })
-}
 
 
 const login = (userData) => {

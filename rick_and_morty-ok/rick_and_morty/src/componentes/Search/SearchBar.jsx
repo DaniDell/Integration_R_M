@@ -9,11 +9,12 @@ export default function SearchBar(props) {
    const handleEnter = (event) => {
       if (event.key === 'Enter') {
          props.onSearch(id);
+         setId('');
       }
    }
 
-   const handleChange = (evento) => {
-      setId(evento.target.value)
+   const handleChange = (event) => {
+      setId(event.target.value)
    }
 
    return (
@@ -28,8 +29,6 @@ export default function SearchBar(props) {
          
          <div className={style.containerInput}>
          <input 
-         
-         
             type='search' 
             placeholder="Write an id number..." 
             className={style.input}
@@ -38,16 +37,15 @@ export default function SearchBar(props) {
             value = {id}
          />
 
-
-</div>
 <Link to="/home" >
          <button 
             onClick={()=> props.onSearch(id)}
-            className={style.btn}
+            className={style.btnL}
          > <h1 className={style.look}>🔎</h1>
          </button>
          </Link>
+         </div>
 
-           </div>
+ </div>
    );
 }

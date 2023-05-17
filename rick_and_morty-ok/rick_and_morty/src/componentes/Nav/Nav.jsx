@@ -10,9 +10,12 @@ const Nav = (props) => {
   };
   return (
     <div className={style.container}>
-      <SearchBar onSearch={onSearch} />
-      
 
+      <div className={style.searchBar1}> 
+      <SearchBar onSearch={onSearch} />
+      </div>
+
+<div className={style.btnX4}>
       <Link to="/home" >
         <button className={style.btn}>Home</button>
       </Link>
@@ -26,6 +29,7 @@ const Nav = (props) => {
       </Link>
       
       <button onClick={handleLogOut} className={style.btn}>LOG.OUT</button>
+      </div>
     </div>
   );
 };

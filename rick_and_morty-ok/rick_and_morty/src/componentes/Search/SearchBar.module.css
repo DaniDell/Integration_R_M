@@ -1,21 +1,22 @@
 .containerSearch {
     display: grid;
-    grid-template: 1fr / 1fr 20% 30%;
+    grid-template: 100px/ 40% 60%;
     justify-content: center;
     align-items: center;
     padding: 1px;
-    margin: 5px;
+    margin: 40px;
     background-color: transparent;
     width: 100%;
     
 }
 
 .logo {
-    width: 60%;
+    width: 100%;
     align-items: start;
     transition: filter 0.3s ease-in-out; /* Agrega una transición suave */
     margin-right: 40px;
     grid-area: 1/1;
+    justify-content: center;
   }
   
   .logo:hover {
@@ -23,9 +24,12 @@
   }
 
 .containerInput {
+    display: grid;
+    grid-template: 1fr/10% 90%;
     margin-left: 0%;
     background-color: transparent;
     justify-content: right;
+    border: red solid;
 }
 
 .look {
@@ -39,8 +43,8 @@
 .input {
     grid-area: 1/2;
     border-radius: 15px;
-    position: absolute;
-    width: 20%;
+    
+    width: 250px;
     height: 2.2em;  
     padding-left: 1%; 
     font-size: 18px;
@@ -50,21 +54,17 @@
     
 }
 
-.btn {
-    position: relative;
+.btnL {
+    grid-area: 1/1;
     cursor: pointer;
     background-color: transparent;
-    border: none; 
-    width: 30%;
-    height: 30%;  
-    
-
-}
+    border: none;
+     }
 
 @media (min-width: 400px) and (max-width: 700px) {
     .containerSearch {
         display: grid;
-        grid-template: 180px 30px 20px/ 1fr 1fr ;
+        grid-template: 1fr 1fr 1fr/ 1fr;
         justify-content: center;
         margin-bottom: 0%;
         padding-top: 5px;
@@ -72,40 +72,17 @@
     }
 
     .logo {
-        width:200%;
+        width:100%;
         background-color: transparent;
+        grid-area: 1/1;
     }
 
-    .containerInput {
+    .containerSearch {
         grid-area: 2/1;
         align-items: center;
         margin: 1% 0% 0% 20%;
         background-color: transparent;
         width: 100px;
-    }
-
-    .input {
-        grid-area: 1/2;
-        width: 30%;
-        margin-right: 10%;
-        
-    }
-
-    .btn {
-        grid-area: 2/1;
-        background-color: transparent;
-        width: 60px;
-        font-size: 45px;
-        align-items:end;
-     }
-
-     .btn {
-        grid-area: 2/1;
-        position: absolute;
-        cursor: pointer;
-        background-color: transparent;
-        border: none; 
-        width: 30%;
-        height: 30%;  
-     }
+    }  
+    
 }

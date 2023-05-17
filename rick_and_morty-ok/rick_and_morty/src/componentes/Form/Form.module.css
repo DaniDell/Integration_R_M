@@ -1,9 +1,9 @@
 .container {
-    text-align: right;
-    margin-right: 30%;
+    text-align: center;
     padding-top: 10%;
     background-color: transparent;
     font-size: 2rem;
+    
 }
 
 
@@ -11,7 +11,6 @@
 .label {
     color: white;
     font-size: 2rem;
-    margin-right: 5px;
     background-color: transparent;
 }
 
@@ -25,7 +24,18 @@
 }
 
 input {
-    font-size: 2rem;
-    width: 10em;
+    font-size: 1.5rem;
+    width: 350px;
     border-radius: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+    margin: 10px;
+    
 }
+
+@media (min-width: 400px) and (max-width: 700px) {
+    .container { 
+       width:100%;
+       justify-content: center;
+    }
+  }

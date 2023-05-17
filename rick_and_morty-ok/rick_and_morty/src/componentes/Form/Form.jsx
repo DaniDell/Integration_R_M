@@ -41,7 +41,7 @@ const Form = (props) => {
                 <label className={style.label}>Email</label>
                 <input 
                     type="email"
-                    placeholder="Email" 
+                    placeholder="Enter your email" 
                     name= "email"
                     value={userData.email}
                     onChange={handleChange}
@@ -67,7 +67,7 @@ const Form = (props) => {
                 <label className={style.label}>Password</label>
                 <input 
                     type="password" 
-                    placeholder="password"
+                    placeholder="Enter our password"
                     name= "password"
                     value={userData.password}
                     onChange={handleChange}
