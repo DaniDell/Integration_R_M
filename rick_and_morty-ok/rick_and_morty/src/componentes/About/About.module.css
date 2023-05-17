@@ -7,22 +7,21 @@
 
 .container  {
     display: grid;
-        grid-template: 30% 40% 30% / 20% 80%;
+        grid-template: 30px 1fr / 20% 80% 10;
         margin: 20px;
         justify-items: left;
 }
 
 .Img {
     border-radius: 40px;
-    grid-area: 1/1/3/1;
+    grid-area: 1/3;
     justify-items: center;
     align-items: center;
     margin: 40px;
 }
 
 p {
-   
-    font-family:  'Arial Narrow Bold', sans-serif;
+   font-family:  'Arial Narrow Bold', sans-serif;
     font-size: 21px;
     padding: 5px;
     color: white;
@@ -31,8 +30,9 @@ p {
 }
 
 .bio {
-    grid-area: 2/2;
+    grid-area: 1/2;
     margin-right: 30px;
+    align-self: flex-start;
 }
 
 .bio2 {
@@ -42,17 +42,17 @@ p {
 }
 
 .porfolio {
-    grid-area: 3/2;
-    font-size: 32px;
+    grid-area: 2/3;
+    font-size: 30px;
     color: black;
     justify-content: center;
-    margin-right: 30px;
+
 }
 
-@media (min-width: 400px) and (max-width: 700px) {
+@media (min-width: 100px) and (max-width: 400px) {
     .container {
         display: grid;
-        grid-template: 40% 60%/ 50% 50%;
+        grid-template: 60% 40/ 1fr;
         justify-content: center;
         margin-bottom: 0%;
         padding-top: 5px;
@@ -60,28 +60,29 @@ p {
     }
 
     .bio {
-        grid-area: 2/2;
+        grid-area: 1/1/1/2;
     }
     
     .bio2 {
-        grid-area: 1/2;
+        grid-area:1/2;
         align-self: flex-end;
     }
 
     .porfolio {
-        grid-area: 2/1;
+        grid-area: 2/2;
         font-size: 32px;
         color: rgb(10, 8, 8);
         justify-content: center;
-        margin: 30px;
+        align-items: end;
     }
+
     .Img {
         border-radius: 40px;
-        grid-area: 1/1/3/1;
+        grid-area: 1/2;
         justify-items: center;
-        align-items: center;
-        margin: 20px;
-        width: 80%;
+        align-items: end;
+        margin: 0px;
+        width: 100%;
     }
 
 

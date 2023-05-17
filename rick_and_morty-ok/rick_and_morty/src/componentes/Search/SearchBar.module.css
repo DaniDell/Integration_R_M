@@ -1,6 +1,6 @@
 .containerSearch {
     display: grid;
-    grid-template: 100px/ 40% 60%;
+    grid-template: 80px/ 40% 60%;
     justify-content: center;
     align-items: center;
     padding: 1px;
@@ -11,8 +11,7 @@
 }
 
 .logo {
-    width: 100%;
-    align-items: start;
+    width: 400px;
     transition: filter 0.3s ease-in-out; /* Agrega una transición suave */
     margin-right: 40px;
     grid-area: 1/1;
@@ -29,7 +28,7 @@
     margin-left: 0%;
     background-color: transparent;
     justify-content: right;
-    border: red solid;
+    
 }
 
 .look {
@@ -61,7 +60,7 @@
     border: none;
      }
 
-@media (min-width: 400px) and (max-width: 700px) {
+@media (min-width: 400px) and (max-width: 600px) {
     .containerSearch {
         display: grid;
         grid-template: 1fr 1fr 1fr/ 1fr;
@@ -74,12 +73,38 @@
     .logo {
         width:100%;
         background-color: transparent;
-        grid-area: 1/1;
+        grid-area: 2/1;
     }
 
     .containerSearch {
-        grid-area: 2/1;
+        grid-area: 3/1;
         align-items: center;
+        margin: 1% 0% 0% 20%;
+        background-color: transparent;
+        width: 100px;
+    }  
+    
+}
+
+@media (min-width: 100px) and (max-width: 400px) {
+    .containerSearch {
+        display:flex ;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 0%;
+        padding: 5px;
+        background-color: transparent;
+    }
+
+    .logo {
+        width:100%;
+        background-color: transparent;
+        justify-content: right;
+    }
+
+    .containerSearch {
+    
+        justify-content: center;
         margin: 1% 0% 0% 20%;
         background-color: transparent;
         width: 100px;

@@ -19,14 +19,7 @@ export default function SearchBar(props) {
 
    return (
       <div className={style.containerSearch}>
-         <a href="https://github.com/DaniDell/Integration_R_M" target="_blank" rel="noopener noreferrer">
-      <img
-        src={imageLogo}
-        alt="logo rick and morty"
-        className={style.logo}
-      />
-    </a>
-         
+                  
          <div className={style.containerInput}>
          <input 
             type='search' 
@@ -45,6 +38,14 @@ export default function SearchBar(props) {
          </button>
          </Link>
          </div>
+
+         <a href="https://github.com/DaniDell/Integration_R_M" target="_blank" rel="noopener noreferrer">
+      <img
+        src={imageLogo}
+        alt="logo rick and morty"
+        className={style.logo}
+      />
+    </a>
 
  </div>
    );
