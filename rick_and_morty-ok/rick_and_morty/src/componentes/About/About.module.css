@@ -3,12 +3,13 @@
     font-size: 3rem;
     color: white;
     margin: 20px;
+    font-family:  'Trebuchet MS', sans-serif;
 }
 
 .container  {
     display: grid;
-        grid-template: 30px 1fr / 20% 80% 10;
-        margin: 20px;
+        grid-template: 30% 70% / 20% 80% 10;
+        margin: 40px;
         justify-items: left;
 }
 
@@ -21,7 +22,7 @@
 }
 
 p {
-   font-family:  'Arial Narrow Bold', sans-serif;
+   font-family:  'Trebuchet MS', sans-serif;
     font-size: 21px;
     padding: 5px;
     color: white;

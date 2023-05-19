@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import axios from 'axios';
 import { useState, useEffect } from "react";
+import style from './Detail.module.css';
 
 const Detail = () => {
     const [character, setCharacter] = useState({})
@@ -20,15 +21,15 @@ const Detail = () => {
 
     return(
         <>
-        <h1>Detail</h1>
+        <h1 className={style.title}>CHARACTER DETAILS:</h1>
         {
             character ? (
-                <div>
-                    <h2>Name: {character.name}</h2>
-                    <h2>Status: {character.status}</h2>
-                    <h2>Species: {character.species}</h2>
-                    <h2>Gender: {character.gender}</h2>
-                    <h2>Origin: {character.origin?.name}</h2>
+                <div className={style.title}>
+                    <h2 className={style.title}>Name: {character.name}</h2>
+                    <h2 className={style.title}>Status: {character.status}</h2>
+                    <h2 className={style.title}>Species: {character.species}</h2>
+                    <h2 className={style.title}>Gender: {character.gender}</h2>
+                    <h2 className={style.title}>Origin: {character.origin?.name}</h2>
                     <img src={character.image} alt={character.name} />
                 </div>
             )

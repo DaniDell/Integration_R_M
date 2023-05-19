@@ -52,8 +52,7 @@ function Card(props) {
                <button 
                   className={style.btn}
                   onClick={()=> onClose(id)}
-               >
-                     X
+               >                     X
                </button>
                <Link to = {`/detail/${id}`}>
                   <h2>{name}</h2>
