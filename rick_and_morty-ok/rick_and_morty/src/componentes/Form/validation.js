@@ -6,25 +6,25 @@ const validation = (data)  => {
     let errors = {}
 
     if(!emailRegexp.test(data.email)) {
-        errors.email = 'Debe ingresar un email valido'
+        errors.email = 'You must enter a valid email'
     }
 
     if(!data.email) {
-        errors.emailVacio = "Debes ingresar un email"
+        errors.emailVacio = "You must enter an email"
     }
     if(data.email !== "ddacqua@gmail.com") {
-        errors.validEmail = "Email incorrecto"
+        errors.validEmail = "This email has an error"
     }
 
     if(data.email.length > 35) {
-        errors.caracteres = "Debe ser un email menor a 35 caracteres"
+        errors.caracteres = "It must be an email less than 35 characters"
     }
 
     if(!passwordRegexp.test(data.password)) {
-        errors.password = "Debe contener letras y numeros, ademas tiene que tener una longitud entre 6 y 10 caracteres"
+        errors.password = "It must contain lowercase letters and numbers, it must also have a length between 6 and 10 characters"
     }
     if(data.password !== "1234dani") {
-        errors.incorrectPass = "Contraseña incorrecta"
+        errors.incorrectPass = "Incorrect password"
     }
 
     return errors;

@@ -20,7 +20,7 @@ const Favorites = ({ myFavorites }) => {
 
   const handleCardClose = (cardId) => {
     // Aquí puedes mostrar la alerta "Para borrar la tarjeta, vuelve al home"
-    alert("Para borrar la tarjeta, vuelve al home");
+    alert("Return to Home in order to dicard this card");
     // Aquí puedes realizar cualquier otra acción relacionada con el cierre de la tarjeta
     // ...
   };
@@ -44,10 +44,10 @@ const Favorites = ({ myFavorites }) => {
       </div>
 
       <div className={style["card-container"]}>
-        {myFavorites?.map((character) => {
+        {myFavorites?.map((character, index) => {
           return (
             <Card
-            key={`${character.id}${Date.now()}`}
+            key={`${character.id}-${index}`}
               id={character.id}
               name={character.name}
               species={character.species}
