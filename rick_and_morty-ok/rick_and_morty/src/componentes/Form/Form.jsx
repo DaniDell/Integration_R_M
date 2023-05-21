@@ -12,21 +12,21 @@ const Form = (props) => {
 
     const [ errors, setErrors ] = useState({})
 
-    const handleChange = (evento) => {
+    const handleChange = (event) => {
         setUserData({
             ...userData,
             //email
             //password
-            [evento.target.name] : evento.target.value
+            [event.target.name] : event.target.value
         })
         setErrors(validation({
             ...userData,
-            [evento.target.name] : evento.target.value
+            [event.target.name] : event.target.value
         }))
     }
 
-    const handleSubmit = (evento) => {
-        evento.preventDefault()
+    const handleSubmit = (event) => {
+        event.preventDefault()
         login(userData)
     }
 
@@ -50,8 +50,8 @@ const Form = (props) => {
                     errors.email ?  (
                         <p style ={{color: 'red'}} >{errors.email}</p>
 
-                    ) : errors.emailVacio ? (
-                        <p style ={{color: 'red'}}>{errors.emailVacio}</p>
+                    ) : errors.emailEmpty ? (
+                        <p style ={{color: 'red', }}>{errors.emailEmpty}</p>
                     ) : 
                     errors.validEmail ?
                     (
@@ -76,16 +76,16 @@ const Form = (props) => {
 
                 {
                     errors.password ?  (
-                        <p style={{color:"red"}}>{errors.password}</p>
+                        <p style={{color:"red" , backgroundColor: "white" }}>{errors.password}</p>
                     ) : 
                     errors.incorrectPass ? (
-                        <p style={{color:"red"}}> {errors.incorrectPass} </p>
+                        <p style={{color:"red", backgroundColor: "white" }}> {errors.incorrectPass} </p>
                     ) :
                     ''
                 }
             </div>
             <br/>
-            <button type='submit' className={style.btn}>Submit</button>
+            <button type='submit' className={style.btn}>Enter</button>
         </form>
     )
 }

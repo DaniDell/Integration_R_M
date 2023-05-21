@@ -10,7 +10,7 @@ const validation = (data)  => {
     }
 
     if(!data.email) {
-        errors.emailVacio = "You must enter an email"
+        errors.emailEmpty = "You must enter an email"
     }
     if(data.email !== "ddacqua@gmail.com") {
         errors.validEmail = "This email has an error"

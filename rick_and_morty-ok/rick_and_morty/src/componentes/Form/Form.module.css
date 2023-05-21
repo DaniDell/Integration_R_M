@@ -4,6 +4,7 @@
     background-color: transparent;
     font-size: 2rem;
     
+    
 }
 
 
@@ -12,6 +13,7 @@
     color: white;
     font-size: 2rem;
     background-color: transparent;
+   
 }
 
 .btn {
@@ -21,6 +23,7 @@
     background-color: white;
     font-size: 2rem;
     border-radius: 12px;
+    
 }
 
 input {
