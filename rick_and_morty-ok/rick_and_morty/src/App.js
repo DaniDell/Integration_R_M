@@ -33,7 +33,7 @@ function App () {
             setCharacters(characters => [...characters, data])
           }
         } else {
-          alert('Character not found')
+          alert('Error not found')
         }
       })
       .catch(() => {
