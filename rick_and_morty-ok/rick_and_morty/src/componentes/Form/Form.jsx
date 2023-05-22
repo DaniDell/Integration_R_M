@@ -36,7 +36,8 @@ const Form = (props) => {
             autoComplete="off" 
             className={style.container}
         >
-
+            <h1 style ={{color: 'white'}} >Wellcome to Rick and Morty App</h1>
+            <br/>
             <div className={style.divContainer}>
                 <label className={style.label}>Email</label>
                 <input 
@@ -46,19 +47,20 @@ const Form = (props) => {
                     value={userData.email}
                     onChange={handleChange}
                 />
+                
                 {
                     errors.email ?  (
-                        <p style ={{color: 'red'}} >{errors.email}</p>
+                        <p style ={{color: 'white'}} >{errors.email}</p>
 
                     ) : errors.emailEmpty ? (
-                        <p style ={{color: 'red', }}>{errors.emailEmpty}</p>
+                        <p style ={{color: 'white'}}>{errors.emailEmpty}</p>
                     ) : 
                     errors.validEmail ?
                     (
-                        <p style ={{color: 'red'}}>{errors.validEmail}</p>
+                        <p style ={{color: 'white'}}>{errors.validEmail}</p>
                     ) :
                     (
-                        <p style ={{color: 'red'}}>{errors.caracteres}</p>
+                        <p style ={{color: 'white'}}>{errors.caracteres}</p>
                     ) 
                 }
             </div>
