@@ -34,7 +34,7 @@ function Card(props) {
           <button className={style.hart} onClick={handleFavorite}>
             ❤️
           </button>
-          // HAY UN ERROR CUANDO SE ACTIVA POR SEGUNDA VEZ ESTE BOTON,  
+           
         ) : (
           <button className={style.hart} onClick={handleFavorite}>
             🤍
