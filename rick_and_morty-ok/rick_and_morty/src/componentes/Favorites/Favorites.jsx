@@ -18,7 +18,7 @@ const Favorites = ({ myFavorites }) => {
     dispatch(filterCards(e.target.value));
   };
 
-  const handleCardClose = (cardId) => {
+  const handleCardClose = () => {
     // Aquí puedes mostrar la alerta "Para borrar la tarjeta, vuelve al home"
     alert("Return to Home in order to dicard this card");
     // Aquí puedes realizar cualquier otra acción relacionada con el cierre de la tarjeta
@@ -30,12 +30,12 @@ const Favorites = ({ myFavorites }) => {
       <h1 className={style.title}>My Favorites</h1>
 
       <div className={style.selectContainer}>
-        <select className={style.title} onChange={handleOrder}>
+        <select className={style.title2} onChange={handleOrder}>
           <option value="A">Ascendente</option>
           <option value="D">Descendente</option>
         </select>
 
-        <select className={style.title} onChange={handleFilter}>
+        <select className={style.title2} onChange={handleFilter}>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
           <option value="Genderless">Genderless</option>

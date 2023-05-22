@@ -17,8 +17,12 @@
 
 .selectContainer {
     margin: 20px;
-    height: 40px;
+    height: auto;
+    text-align: center;  
+}
+
+.title2 {
+    text-align: center;
     justify-content: center;
-    background-color: black;
-    
+    font-size: 2rem;
 }

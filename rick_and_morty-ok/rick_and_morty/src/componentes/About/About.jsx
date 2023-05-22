@@ -5,13 +5,13 @@ import React from 'react';
 const About = () => {
     return (
         <>
-        <h2 className={style.title}>Daniela Dell Acqua, estudiante Henry Flex 2023</h2>
+        <h2 className={style.title}>Daniela Dell Acqua - Henry Flex 2023</h2>
         
         
         <div className={style['container']}>
-        <p className={style['bio2']}> A Daniela le encantan los desafíos y programar es hoy el que la tiene trabajando en esta app. </p>
-        <p className={style['bio']}> Estudió diseño en la Universidad de Buenos Aires y UX/UI en Coderhouse. Al finalizar su formación en Henry espera poder colaborar con proyectos que integren sus saberes previos y hará foco en la accesibilidad digital. </p>
-        <a className={style['porfolio']} href="https://www.behance.net/dandellacqua">Visitar en Behance</a>
+
+        <p className={style['bio']}> She studied design at Buenos Aires University and UX/UI at Coderhouse. These are her first code lines. At the end of her bootcamp at Henry, she hopes to be able to collaborate with projects that integrate her previous knowledge and will focus on digital accessibility. </p>
+        <a className={style['porfolio']} href="https://www.behance.net/dandellacqua">Visit her Behance</a>
         <img 
             src={image} 
             alt="Dani" 

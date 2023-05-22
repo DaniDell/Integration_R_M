@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     padding: 1px;
-    margin: 40px;
+    margin:  40px 0px 0px 90px;
     background-color: transparent;
     width: 100%;
     
@@ -13,7 +13,7 @@
 .logo {
     width: 400px;
     transition: filter 0.3s ease-in-out; /* Agrega una transición suave */
-    margin-right: 40px;
+    margin-left: 60px;
     grid-area: 1/1;
     justify-content: center;
   }
@@ -42,8 +42,7 @@
 .input {
     grid-area: 1/2;
     border-radius: 15px;
-    
-    width: 250px;
+    width: 290px;
     height: 2.2em;  
     padding-left: 1%; 
     font-size: 18px;
@@ -74,6 +73,7 @@
         width:100%;
         background-color: transparent;
         grid-area: 2/1;
+        justify-content: center;
     }
 
     .containerSearch {
