@@ -24,13 +24,16 @@ const Detail = () => {
         <h1 className={style.title}>CHARACTER DETAILS:</h1>
         {
             character ? (
-                <div className={style.title}>
-                    <h2 className={style.title}>Name: {character.name}</h2>
+                <div className={style.detail}>
+                    
+                    <div className={style.titleT}>
+                    <h2 >Name: {character.name}</h2>
                     <h2 className={style.title}>Status: {character.status}</h2>
                     <h2 className={style.title}>Species: {character.species}</h2>
                     <h2 className={style.title}>Gender: {character.gender}</h2>
                     <h2 className={style.title}>Origin: {character.origin?.name}</h2>
-                    <img src={character.image} alt={character.name} />
+                    </div>
+                    <img className={style.imgD} src={character.image} alt={character.name} />
                 </div>
             )
              :  (

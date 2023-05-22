@@ -27,6 +27,8 @@ const Favorites = ({ myFavorites }) => {
 
   return (
     <>
+
+    <div className={style.Container}>
       <h1 className={style.title}>My Favorites</h1>
 
       <div className={style.selectContainer}>
@@ -42,12 +44,13 @@ const Favorites = ({ myFavorites }) => {
           <option value="unknown">unknown</option>
         </select>
       </div>
+      </div>
 
       <div className={style["card-container"]}>
         {myFavorites?.map((character, index) => {
           return (
             <Card
-            key={`${character.id}-${index}`}
+            key={character.id}
               id={character.id}
               name={character.name}
               species={character.species}

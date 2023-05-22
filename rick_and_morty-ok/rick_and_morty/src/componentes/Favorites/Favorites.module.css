@@ -1,11 +1,17 @@
+.Container {
+    height: 2rem;
+    text-align: right;  
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+}
+
 .title {
-    text-align: center;
-    justify-content: center;
+    text-align: left;
     font-size: 2rem;
     color: rgb(255, 255, 255);
-    background-color: transparent;
-    margin: 10px;
+    margin: 20px;
     font-family:  'Trebuchet MS', sans-serif;
+    grid-area: 1/1;
 }
 
 .card-container {
@@ -18,7 +24,8 @@
 .selectContainer {
     margin: 20px;
     height: auto;
-    text-align: center;  
+    text-align: right;  
+    grid-area: 1/2;
 }
 
 .title2 {

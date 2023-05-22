@@ -1,7 +1,39 @@
-.title {
+.detail {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
     text-align: center;
-    font-size: 3rem;
+    justify-content: center;
+    margin: 0px;
+}
+
+.title {
+    grid-area: 1/2;
+    text-align: center;
+    font-size: 1.5rem;
     color: white;
     margin: 20px;
     font-family:  'Trebuchet MS', sans-serif;
+    
 }
+
+.titleT {
+    grid-area: 1/2;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    margin: 10px;
+    font-family:  'Trebuchet MS', sans-serif;
+    margin-right: 200px;
+    align-content: end;
+}
+
+.imgD {
+    grid-area: 1/1;
+    position: relative;
+    border-radius: 40px;
+    justify-items: center;
+    align-items: center;
+    margin-left: 200px;
+    box-shadow: 0 4px 0px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    }

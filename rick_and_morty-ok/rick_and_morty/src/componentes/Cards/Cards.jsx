@@ -23,7 +23,7 @@ export default function Cards(props) {
         const isFavorite = favoriteCharacters.some((fav) => fav.id === character.id);
           return (
             <Card
-              key={`${character.id}-${Date.now()}`}
+              key={character.id}
               id= {character.id}
               name={character.name}
               species={character.species}
