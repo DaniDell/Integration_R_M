@@ -38,6 +38,7 @@ const Favorites = ({ myFavorites }) => {
         </select>
 
         <select className={style.title2} onChange={handleFilter}>
+        <option value="">Choose a Gender to play</option>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
           <option value="Genderless">Genderless</option>
