@@ -33,8 +33,9 @@ const Favorites = ({ myFavorites }) => {
 
       <div className={style.selectContainer}>
         <select className={style.title2} onChange={handleOrder}>
-          <option value="A">Ascendente</option>
-          <option value="D">Descendente</option>
+        <option value="">Order</option>
+          <option value="A">🔻</option>
+          <option value="D">🔺</option>
         </select>
 
         <select className={style.title2} onChange={handleFilter}>

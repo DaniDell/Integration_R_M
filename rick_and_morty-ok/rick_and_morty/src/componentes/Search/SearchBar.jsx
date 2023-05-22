@@ -23,7 +23,7 @@ export default function SearchBar(props) {
          <div className={style.containerInput}>
          <input 
             type='search' 
-            placeholder="Write an id number..." 
+            placeholder=" Write an id number..." 
             className={style.input}
             onKeyUp={handleEnter}
             onChange={handleChange}

@@ -19,7 +19,7 @@
   }
   
   .logo:hover {
-    filter: brightness(4.2); /* Aumenta el brillo de la imagen */
+    filter: brightness(200%);
   }
 
 .containerInput {
@@ -33,11 +33,16 @@
 
 .look {
     background-color: transparent;
-    width: 60px;
-    font-size: 45px;
+    width: 80px;
+    font-size: 50px;
     align-items: center;
-    
 }
+
+
+.look:hover {
+    filter: contrast(200%); 
+  }
+
 
 .input {
     grid-area: 1/2;
@@ -45,7 +50,7 @@
     width: 290px;
     height: 2.2em;  
     padding-left: 1%; 
-    font-size: 18px;
+    font-size: 20px;
     align-items: center;
     background-color: white;
     justify-content: center;
