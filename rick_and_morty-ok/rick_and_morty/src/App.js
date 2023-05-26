@@ -69,7 +69,6 @@ const onClose = (id) => {
         
         <Routes>
           
-
           <Route path='/'  element= {<Form login= {login} />}/>
 
           <Route  path="/home" element={<Cards characters= {characters} onClose = {onClose}/> }/>
