@@ -36,10 +36,12 @@ const Form = (props) => {
             autoComplete="off" 
             className={style.container}
         >
-            <h1 style ={{color: 'white'}} >Wellcome to Rick and Morty App</h1>
+            <h1 style ={{color: 'white'}} >Wellcome to </h1>
+            <h1 style ={{color: 'white'}} >Rick and Morty´s</h1>
+            <h1 style ={{color: 'white'}} >Card Play </h1>
             <br/>
             <div className={style.divContainer}>
-                <label className={style.label}>Email</label>
+                <label className={style.label}> Email 👇 </label>
                 <input 
                     type="email"
                     placeholder="Enter your email" 
@@ -66,10 +68,10 @@ const Form = (props) => {
             </div>
             <br/>
             <div>
-                <label className={style.label}>Password</label>
+                <label className={style.label}>Password 👇</label>
                 <input 
                     type="password" 
-                    placeholder="Enter our password"
+                    placeholder="Write your password"
                     name= "password"
                     value={userData.password}
                     onChange={handleChange}
