@@ -11,16 +11,11 @@
 
 
 
-@media (min-width: 400px) and (max-width: 700px) {
+@media (min-width: 200px) and (max-width: 700px) {
   .container { 
      width:100%;
      justify-content: center;
+     height: 200vh;
   }
 }
 
-@media (min-width: 100px) and (max-width: 400px) {
-  .containerSearch {
-      justify-content: center;
-      width: 100% ;
-  }
-}
