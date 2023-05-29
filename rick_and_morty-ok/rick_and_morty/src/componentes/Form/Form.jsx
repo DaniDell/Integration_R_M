@@ -41,7 +41,7 @@ const Form = (props) => {
             <h1 style ={{color: 'white'}} >Card Play </h1>
             <br/>
             <div className={style.divContainer}>
-                <label className={style.label}> Email 👇 </label>
+                <label className={style.label}> Email </label>
                 <input 
                     type="email"
                     placeholder="Enter your email" 
@@ -68,7 +68,7 @@ const Form = (props) => {
             </div>
             <br/>
             <div>
-                <label className={style.label}>Password 👇</label>
+                <label className={style.label}>Password:</label>
                 <input 
                     type="password" 
                     placeholder="Write your password"
