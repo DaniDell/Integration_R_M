@@ -67,7 +67,7 @@
 
 @media (min-width: 200px) and (max-width: 600px) {
     .containerSearch {
-        grid-template: 1fr 1fr/ 1fr;
+        grid-template: 40% 60%/ 1fr;
         justify-content: center;
         margin:  0%;
         background-color: transparent;
@@ -75,13 +75,13 @@
     }
 
     .logo {
-        grid-area: 1/1;
         width:18rem;
         background-color: transparent;
         
     }
 
     .containerSearch {
+        
         align-items: center;
         justify-content: center;
         margin: 0% 0% 0% 25%;

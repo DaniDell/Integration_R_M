@@ -44,8 +44,8 @@
 
     .btn{
         height:min-content;
-        margin:  3px;
-        font-size: 2rem;
+        margin:  6px;
+        font-size: 1.5rem;
         align-items: center;
         width: 150px; 
       }
@@ -61,7 +61,7 @@
 
     .searchBar1 { 
         justify-content: center;
-        height: 14rem;
+        height: 10rem;
          }
     
 }

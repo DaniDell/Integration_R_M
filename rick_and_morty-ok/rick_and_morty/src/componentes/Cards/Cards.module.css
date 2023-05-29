@@ -5,8 +5,11 @@
 }
 
 
-@media (min-width: 400px) and (max-width: 700px) {
+@media (min-width: 200px) and (max-width: 700px) {
     .container {
         justify-content: center;
+        padding-left: 0rem;
+        margin-top: 1rem;
+        height: 400px;
     }
 }

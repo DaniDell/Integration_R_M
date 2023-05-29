@@ -29,17 +29,17 @@ const Favorites = ({ myFavorites }) => {
     <>
 
     <div className={style.Container}>
-      <h1 className={style.title}>My Favorites</h1>
+      <h1 className={style.title}>Select</h1>
 
       <div className={style.selectContainer}>
         <select className={style.title2} onChange={handleOrder}>
-        <option value="">Order</option>
+        <option value="">Id order </option>
           <option value="A">🔻</option>
           <option value="D">🔺</option>
         </select>
 
         <select className={style.title2} onChange={handleFilter}>
-        <option value="">Choose a Gender to play</option>
+        <option value="">Gender</option>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
           <option value="Genderless">Genderless</option>
