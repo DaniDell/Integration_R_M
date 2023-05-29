@@ -21,14 +21,14 @@ const Nav = (props) => {
       </Link>
 
       <Link to="/favorites" >
-        <button className={style.btn}>Favorites</button>
+        <button className={style.btn}>My favorites</button>
       </Link>
 
       <Link to="/about" >
-        <button className={style.btn}>About</button>
+        <button className={style.btn}>About the autor</button>
       </Link>
       
-      <button onClick={handleLogOut} className={style.btn}>LOG.OUT</button>
+      <button onClick={handleLogOut} className={style.btn}>LOG OUT the game</button>
       </div>
     </div>
   );
