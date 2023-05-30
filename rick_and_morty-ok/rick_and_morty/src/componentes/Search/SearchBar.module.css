@@ -75,8 +75,9 @@
     }
 
     .logo {
-        width:18rem;
+        width:19rem;
         background-color: transparent;
+        justify-content: center;
         
         
     }

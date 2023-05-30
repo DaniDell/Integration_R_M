@@ -36,9 +36,9 @@ const Form = (props) => {
             autoComplete="off" 
             className={style.container}
         >
-            <h1 style ={{color: 'white'}} >Wellcome to </h1>
+            <h1 className={style.sub} >Wellcome to </h1>
             <h1 style ={{color: 'white'}} >Rick and Morty´s</h1>
-            <h1 style ={{color: 'white'}} >Card Play </h1>
+            <h1 className={style.sub} >Card Play </h1>
             <br/>
             <div className={style.divContainer}>
                 <label className={style.label}> Email </label>

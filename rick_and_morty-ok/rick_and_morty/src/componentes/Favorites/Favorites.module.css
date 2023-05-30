@@ -1,9 +1,10 @@
 .Container {
-    height: 2rem;
+    height: 4rem;
     text-align: right;  
     display: grid;
-    grid-template: 1fr / 35% 65%;
+    grid-template: 4rem / 35% 65%;
     align-items: center;
+    background-color: black;
 }
 
 .title {
@@ -13,6 +14,7 @@
     margin: 20px;
     font-family:  'Trebuchet MS', sans-serif;
     grid-area: 1/1;
+    
 }
 
 .card-container {
@@ -27,6 +29,7 @@
     height: auto;
     text-align: left;  
     grid-area: 1/2;
+    
 }
 
 .title2 {
@@ -49,7 +52,7 @@
     
     .title {
         text-align: right;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         color: rgb(255, 255, 255);
         margin: 10px;
         font-family:  'Trebuchet MS', sans-serif;
@@ -68,14 +71,14 @@
         margin: 0px;
         height: 1.8rem;
         text-align: left;  
-        
         justify-content: left;
     }
     
     .title2 {
-        text-align: left;
-        justify-content: left;
-        font-size: 1.2rem;
+        text-align:center;
+        font-size: 1.3rem;
         margin-top: 0.4rem;
+        align-items: center;
+        justify-content: center;
     }
   }

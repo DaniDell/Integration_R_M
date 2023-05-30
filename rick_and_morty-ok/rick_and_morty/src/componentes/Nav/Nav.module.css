@@ -48,15 +48,15 @@
         font-size: 1.5rem;
         align-items: center;
         width: 150px; 
-        height: 45px;
+        height: 60px;
       }
 
     .btnX4{
     justify-content: center;
-     width: 100%;
-     padding: 0px;
+     width: auto;
+     padding-left: 1rem;
      margin: 0px;
-     padding-left: 2rem;
+     
      
     }
 
