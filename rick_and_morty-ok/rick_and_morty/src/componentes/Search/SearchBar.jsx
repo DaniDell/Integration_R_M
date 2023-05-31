@@ -32,19 +32,20 @@ export default function SearchBar(props) {
 
 <Link to="/home" >
          <button 
-            onClick={()=> props.onSearch(id)}
-            className={style.btnL}
+            onClick={()=> props.onSearch(id)} 
+            className={style.btnLook}
          > <h1 className={style.look}>🔎</h1>
          </button>
          </Link>
          </div>
 
-         <a href="https://github.com/DaniDell/Integration_R_M" target="_blank" rel="noopener noreferrer">
+         <a href="https://github.com/DaniDell/Integration_R_M" target="code repo" rel="noopener noreferrer">
       <img
         src={imageLogo}
         alt="logo rick and morty"
         className={style.logo}
       />
+      <span  className={style.link}> View the code at GitHub</span>
     </a>
 
  </div>

@@ -30,7 +30,7 @@
     align-items: center;
     justify-items: center;
     grid-area: 2/1;
-    padding-left: 2rem;
+    padding-left: 3rem;
 }
 
 @media  (min-width: 200px) and (max-width: 700px) {
@@ -53,8 +53,8 @@
 
     .btnX4{
     justify-content: center;
-     width: auto;
-     padding-left: 1rem;
+     width: 100%;
+     padding-left: 8%;
      margin: 0px;
      
      
