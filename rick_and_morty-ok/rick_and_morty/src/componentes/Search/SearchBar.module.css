@@ -11,7 +11,7 @@
 }
 
 .logo {
-    width: 400px;
+    width: 26rem;
     transition: filter 0.3s ease-in-out; /* Agrega una transición suave */
     margin-left: 60px;
     grid-area: 1/1;
