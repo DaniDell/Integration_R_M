@@ -50,10 +50,9 @@
 }
 
 .btnLook {
-    grid-area: 1/1;
     cursor: pointer;
     background-color: transparent;
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     border: none;
     text-shadow: 4px 4px 8px rgba(252, 252, 252, 0.5);
     align-items: center;
