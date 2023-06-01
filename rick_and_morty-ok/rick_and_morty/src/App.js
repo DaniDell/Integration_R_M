@@ -11,7 +11,6 @@ import Favorites from './componentes/Favorites/Favorites';
 
 
 
-
 function App () {
   let [ characters, setCharacters ] = useState([])
 
@@ -43,7 +42,6 @@ function App () {
   }
   
 
-
 const login = (userData) => {
   if(userData.password === PASSWORD && userData.email === EMAIL) {
     setAccess(true)
@@ -54,17 +52,13 @@ const login = (userData) => {
 useEffect(()=> {  !access && navigate('/')}, [access, navigate])
 
 const onClose = (id) => {
-  setCharacters(
-    characters.filter((character) => character.id !== Number(id))
-  )
-}
+  setCharacters(characters.filter((character) => character.id !== Number(id)))}
   return (
     <div className='container'>
         
           { pathname !== '/' && 
-            <Nav 
-              onSearch = {onSearch}
-              setAccess ={setAccess}
+            <Nav  onSearch = {onSearch}
+             setAccess ={setAccess}
             /> }
         
         <Routes>

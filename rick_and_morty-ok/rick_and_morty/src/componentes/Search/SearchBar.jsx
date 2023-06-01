@@ -21,6 +21,8 @@ export default function SearchBar(props) {
       <div className={style.containerSearch}>
                   
          <div className={style.containerInput}>
+         <Link to="/home" >     
+
          <input 
             type='search' 
             placeholder="Search by id number..." 
@@ -30,7 +32,7 @@ export default function SearchBar(props) {
             value = {id}
          />
 
-<Link to="/home" >
+
          <button 
             onClick={()=> props.onSearch(id)} 
             className={style.btnLook}

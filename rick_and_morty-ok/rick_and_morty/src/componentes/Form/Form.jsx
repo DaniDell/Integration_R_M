@@ -13,22 +13,12 @@ const Form = (props) => {
     const [ errors, setErrors ] = useState({})
 
     const handleChange = (event) => {
-        setUserData({
-            ...userData,
-            //email
-            //password
-            [event.target.name] : event.target.value
-        })
-        setErrors(validation({
-            ...userData,
-            [event.target.name] : event.target.value
-        }))
+        setUserData({...userData, [event.target.name] : event.target.value})
+        setErrors(validation({ ...userData, [event.target.name] : event.target.value}))
     }
 
-    const handleSubmit = (event) => {
-        event.preventDefault()
-        login(userData)
-    }
+    const handleSubmit = (event) => { event.preventDefault()
+        login(userData)}
 
     return (
         <form 
@@ -38,7 +28,7 @@ const Form = (props) => {
         >
             <h1 className={style.sub} >Wellcome to </h1>
             <h1 style ={{color: 'white'}} >Rick and Morty´s</h1>
-            <h1 className={style.sub} >Card Play </h1>
+            <h1 className={style.sub} >Card Album App</h1>
             <br/>
             <div className={style.divContainer}>
                 <label className={style.label}> Email </label>
@@ -68,16 +58,12 @@ const Form = (props) => {
                     name= "password"
                     value={userData.password}
                     onChange={handleChange}
-                
                 />
 
-                { errors.password ?  (
-                        <p style={{color:"red" , backgroundColor: "white" }}>{errors.password}</p>
+                { errors.password ?  (<p style={{color:"red" , backgroundColor: "white" }}>{errors.password}</p>
                     ) : 
-                    errors.incorrectPass ? (
-                        <p style={{color:"red", backgroundColor: "white" }}> {errors.incorrectPass} </p>
-                    ) :
-                    '' }
+                    errors.incorrectPass ? (<p style={{color:"red", backgroundColor: "white" }}> {errors.incorrectPass} </p>
+                    ) :  '' }
             </div>
             <br/>
             <button type='submit' className={style.btn}>Enter</button>
