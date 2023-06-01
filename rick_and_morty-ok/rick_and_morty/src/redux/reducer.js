@@ -38,10 +38,16 @@ const reducer = (state = initialState, action) => {
             return {...state, myFavorites: [...orderCharacter]};
 
         case REMOVE_FAV:
-            let deleteCharacter = state.myFavorites.filter(
-                character => character.id !== Number(action.payload)
-            );
-            return { ...state, myFavorites: deleteCharacter};
+            // let deleteCharacter = state.myFavorites.filter(
+            //     character => character.id !== Number(action.payload)
+            // );
+            // return { ...state, myFavorites: deleteCharacter};
+            const restFavorites = state.myFavorites.filter(fav =>fav.id !== action.payload)
+            return {
+                ...state,
+                myFavorites: restFavorites,
+                allCharacter: restFavorites
+            }
 
         default:
             return state;
