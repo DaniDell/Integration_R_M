@@ -39,6 +39,7 @@ function Card(props) {
         <div className={style.back}>
           <button className={style.btn} onClick={() => onClose(id)}> X </button>
           <Link to={`/detail/${id}`}> <h2>{name}</h2></Link>
+          <h2>{`Id:${id}`}</h2>
           <h2>{species}</h2>
           <h2>{status}</h2>
            </div>
