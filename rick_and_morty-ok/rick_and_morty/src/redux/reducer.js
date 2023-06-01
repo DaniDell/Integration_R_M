@@ -8,16 +8,19 @@ const initialState = {
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_FAV:
-            return {...state,  myFavorites: [...state.myFavorites, action.payload] };
+            return {...state, 
+                myFavorites: [...state.allCharacter, action.payload],
+                allCharacter: [...state.allCharacter, action.payload]
+             };
 
         case FILTER:
-            let copyFilter = state.myFavorites.filter( character => character.gender === action.payload );
+            let copyFilter = state.allCharacter.filter( character => character.gender === action.payload );
 
             return { ...state, myFavorites: copyFilter};
 
             
         case ORDER:
-            let orderCharacter = [...state.myFavorites];
+            let orderCharacter = [...state.allCharacter];
 
             orderCharacter.sort((a, b) => {
                 if (action.payload === "A") {
