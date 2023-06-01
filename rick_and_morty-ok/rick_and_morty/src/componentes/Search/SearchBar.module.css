@@ -104,12 +104,12 @@ a {     grid-area: 1/1;
         margin-left: 35%;
         background-color: transparent;
         width: 180px;
-        padding-top: 6.5rem;
+        padding-top: 6rem;
         
     }  
 
     .input {          
- margin: o.5rem;}
+ margin: 1rem;}
     
 }
 
