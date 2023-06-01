@@ -81,7 +81,7 @@ a {     grid-area: 1/1;
         pointer-events: none; 
         position: absolute;
         top: 1.8rem;
-        left: 4rem;
+        left: 3.5rem;
     }
 
     .link {
@@ -108,9 +108,8 @@ a {     grid-area: 1/1;
         
     }  
 
-    .input {
-          
- margin: 1rem;}
+    .input {          
+ margin: o.5rem;}
     
 }
 
