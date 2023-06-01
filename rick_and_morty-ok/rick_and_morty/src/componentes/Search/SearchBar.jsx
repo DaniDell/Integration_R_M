@@ -10,12 +10,10 @@ export default function SearchBar(props) {
       if (event.key === 'Enter') {
          props.onSearch(id);
          setId('');
-      }
-   }
+      }}
 
    const handleChange = (event) => {
-      setId(event.target.value)
-   }
+      setId(event.target.value)}
 
    return (
       <div className={style.containerSearch}>
@@ -31,8 +29,6 @@ export default function SearchBar(props) {
             onChange={handleChange}
             value = {id}
          />
-
-
          <button 
             onClick={()=> props.onSearch(id)} 
             className={style.btnLook}
