@@ -16,6 +16,8 @@ const reducer = (state = initialState, action) => {
         case FILTER:
             let copyFilter = state.allCharacter.filter( character => character.gender === action.payload );
 
+            if (action.payload === "")  return {...state, myFavorites: state.allCharacter};
+            else 
             return { ...state, myFavorites: copyFilter};
 
             
