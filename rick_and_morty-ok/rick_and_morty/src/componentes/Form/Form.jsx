@@ -50,20 +50,13 @@ const Form = (props) => {
                     onChange={handleChange}
                 />
                 
-                {
-                    errors.email ?  (
-                        <p style ={{color: 'white'}} >{errors.email}</p>
+                { errors.email ?  (<p style ={{color: 'white'}} >{errors.email}</p>
 
-                    ) : errors.emailEmpty ? (
-                        <p style ={{color: 'white'}}>{errors.emailEmpty}</p>
+                    ) : errors.emailEmpty ? (<p style ={{color: 'white'}}>{errors.emailEmpty}</p>
                     ) : 
-                    errors.validEmail ?
-                    (
-                        <p style ={{color: 'white'}}>{errors.validEmail}</p>
+                    errors.validEmail ? (<p style ={{color: 'white'}}>{errors.validEmail}</p>
                     ) :
-                    (
-                        <p style ={{color: 'white'}}>{errors.caracteres}</p>
-                    ) 
+                    (<p style ={{color: 'white'}}>{errors.caracteres}</p>) 
                 }
             </div>
             <br/>
@@ -78,15 +71,13 @@ const Form = (props) => {
                 
                 />
 
-                {
-                    errors.password ?  (
+                { errors.password ?  (
                         <p style={{color:"red" , backgroundColor: "white" }}>{errors.password}</p>
                     ) : 
                     errors.incorrectPass ? (
                         <p style={{color:"red", backgroundColor: "white" }}> {errors.incorrectPass} </p>
                     ) :
-                    ''
-                }
+                    '' }
             </div>
             <br/>
             <button type='submit' className={style.btn}>Enter</button>
