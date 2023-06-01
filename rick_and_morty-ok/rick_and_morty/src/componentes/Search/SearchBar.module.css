@@ -81,7 +81,7 @@ a {     grid-area: 1/1;
         pointer-events: none; 
         position: absolute;
         top: 1.8rem;
-        left: 3.5rem;
+        left: 3rem;
     }
 
     .link {
@@ -92,7 +92,7 @@ a {     grid-area: 1/1;
     }
 
     .btnLook {
-     font-size: 2.2rem;
+     font-size: 2.5rem;
      position: absolute;
     top: 6rem;
     left: 0.3rem;}
