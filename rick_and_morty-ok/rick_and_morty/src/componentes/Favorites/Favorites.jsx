@@ -44,7 +44,7 @@ const Favorites = ({ myFavorites }) => {
 
         <div className={style.selectContainer}>
           <select className={style.title2} onChange={handleOrder}>
-            <option value="">Id order</option>
+            <option value="">Id</option>
             <option value="A">🔻</option>
             <option value="D">🔺</option>
           </select>
