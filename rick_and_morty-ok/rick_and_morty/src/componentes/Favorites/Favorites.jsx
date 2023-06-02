@@ -5,36 +5,30 @@ import { useState } from "react";
 import style from "./Favorites.module.css";
 
 const Favorites = ({ myFavorites }) => {
-  const [aux, setAux] = useState(false);
-  const [filter1, setFilter1] = useState(""); // Estado del primer filtro
-  const [filter2, setFilter2] = useState(""); // Estado del segundo filtro
+  const [filter1, setFilter1] = useState("");
+  const [filter2, setFilter2] = useState("");
   const dispatch = useDispatch();
 
   const handleOrder = (e) => {
     dispatch(orderCards(e.target.value));
-    setAux(!aux);
+    setFilter1("");
+    setFilter2("");
   };
 
   const handleFilter = (e) => {
-    resetFilters(); // Resetea los filtros antes de aplicar el nuevo filtro
-    setFilter1(e.target.value); // Actualiza el estado del primer filtro
+    setFilter1(e.target.value);
     dispatch(filterCards(e.target.value));
+    setFilter2("");
   };
 
   const handleFilter2 = (e) => {
-    resetFilters(); // Resetea los filtros antes de aplicar el nuevo filtro
-    setFilter2(e.target.value); // Actualiza el estado del segundo filtro
+    setFilter2(e.target.value);
     dispatch(filterCards2(e.target.value));
+    setFilter1("");
   };
 
   const handleCardClose = () => {
-        alert("To dicard this card or tap on the 🤍 or return to home to use the X button");
-    
-  };
-
-  const resetFilters = () => {
-    setFilter1(""); // Resetea el estado del primer filtro
-    setFilter2(""); // Resetea el estado del segundo filtro 
+    alert("To discard this card, tap on the 🤍 or return to the home page to use the X button");
   };
 
   return (
@@ -43,7 +37,7 @@ const Favorites = ({ myFavorites }) => {
         <h1 className={style.title}>Filter by</h1>
 
         <div className={style.selectContainer}>
-          <select className={style.title2} onChange={handleOrder}>
+          <select className={style.title2} onChange={handleOrder} value="">
             <option value="">Id</option>
             <option value="A">🔻</option>
             <option value="D">🔺</option>
@@ -68,21 +62,19 @@ const Favorites = ({ myFavorites }) => {
       </div>
 
       <div className={style["card-container"]}>
-        {myFavorites?.map((character) => {
-          return (
-            <Card
-              key={character.id}
-              id={character.id}
-              name={character.name}
-              species={character.species}
-              gender={character.gender}
-              origin={character.origin}
-              status={character.status}
-              image={character.image}
-              onClose={handleCardClose} // Pasamos la función handleCardClose como prop
-            />
-          );
-        })}
+        {myFavorites?.map((character) => (
+          <Card
+            key={character.id}
+            id={character.id}
+            name={character.name}
+            species={character.species}
+            gender={character.gender}
+            origin={character.origin}
+            status={character.status}
+            image={character.image}
+            onClose={handleCardClose}
+          />
+        ))}
       </div>
     </>
   );

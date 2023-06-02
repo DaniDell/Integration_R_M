@@ -30,6 +30,7 @@
     height: auto;
     text-align: left;  
     grid-area: 1/2;
+    justify-items: left;
     
 }
 
