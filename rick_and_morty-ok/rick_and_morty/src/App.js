@@ -51,8 +51,10 @@ const login = (userData) => {
 
 useEffect(()=> {  !access && navigate('/')}, [access, navigate])
 
+
 const onClose = (id) => {
   setCharacters(characters.filter((character) => character.id !== Number(id)))}
+  
   return (
     <div className='container'>
         

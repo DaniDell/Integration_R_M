@@ -28,7 +28,7 @@ const Favorites = ({ myFavorites }) => {
   };
 
   const handleCardClose = () => {
-        alert("Return to Home in order to dicard this card");
+        alert("Return to Home in order to dicard this card or tap on the 🤍");
     
   };
 
