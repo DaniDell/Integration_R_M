@@ -34,6 +34,7 @@ export default function SearchBar(props) {
             className={style.btnLook}
          > <h1 className={style.look}>🔎</h1>
          </button>
+         
          </Link>
          </div>
 

@@ -31,6 +31,7 @@ const Form = (props) => {
             <h1 className={style.sub} >Card Album App</h1>
             <br/>
             <div className={style.divContainer}>
+                
                 <label className={style.label}> Email </label>
                 <input 
                     type="email"
